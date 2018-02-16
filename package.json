@@ -1,10 +1,12 @@
 {
   "name": "design-system-contrib",
+  "homepage": "https://autosponge.github.io/git-history-charts/",
   "version": "0.0.0",
   "dependencies": {
     "@nivo/bar": "^0.33.0-4",
     "@nivo/core": "^0.32.0",
     "@nivo/generators": "^0.32.0",
+    "gh-pages": "^1.1.0",
     "lodash-es": "^4.17.5",
     "react": "16.2.0",
     "react-dom": "16.2.0",
@@ -14,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
