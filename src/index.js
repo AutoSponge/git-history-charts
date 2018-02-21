@@ -1,11 +1,3 @@
-/*
-// from the cloned repo
-echo "[" > repo.json
-git log master --pretty='{"email":"%aE", "date":"%ad"},' --date=short >> repo.json
-echo "]" >> repo.json
-pbcopy < repo.json
-*/
-
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
